@@ -1,12 +1,13 @@
 import Landing from "@/components/Landing";
-//import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
+
 
 
 export default function Home() {
   return (
-       <div>
+       <div className="bg-black">
          <Landing/>
-        
+        <Navbar/>
          
        </div>
   );
