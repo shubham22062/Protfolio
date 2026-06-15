@@ -76,7 +76,7 @@ export default function Landing() {
         {ripples.map((r) => (
           <span
             key={r.id}
-            className="ripple"
+            className="ripple bg-red-500/20"
             style={{
               left: r.x,
               top: r.y,
