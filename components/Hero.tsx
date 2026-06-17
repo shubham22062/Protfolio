@@ -53,12 +53,26 @@ export default function Hero(){
 
             
 
-         <div className="pt-50 pl-50">
-             <span className="text-6xl font-bold block text-red-500  items-center text-center">Hi I'm Shubham Awasthi</span>
-          <span className="text-5xl font-bold block text-white items-center text-center pt-4">Software Engineer</span>
-          <p className="text-2xl text-white max-w-3xl pt-10 text-center items-center">Adaptable developer with a track record of onboarding users to live platforms and contributing to the open-source ecosystem.</p>
+         <div className="pt-50 pl-40">
+                <span className="text-6xl font-bold block text-red-500 text-center animate-title">
+                    Hi I'm Shubham Awasthi
+                </span>
 
-          <div className="flex items-center gap-6 mt-[80px] pl-10">
+                <span className="text-5xl font-bold block text-white text-center pt-4 animate-subtitle">
+                    Software Engineer
+                </span>
+
+                <p className="text-xl text-gray-400 max-w-6xl pt-10 text-center animate-description">
+                    Driven by curiosity and innovation, I build modern web applications
+                    Driven by curiosity and innovation, I build modern web applications
+                    that combine clean design with powerful functionality.
+                    With expertise in full-stack development and AI technologies,
+                    I strive to create products that solve real-world problems.
+
+
+                </p>
+
+          <div className="flex items-center gap-6 mt-[80px] pl-10 animate-btn">
             <button
             onClick={toggleVideo}
             className="absolute w-[150px] h-[50px] bg-red-500  ml-[150px] text-white px-6 py-3 rounded-full hover:scale-105 transition"
@@ -67,13 +81,14 @@ export default function Hero(){
 
             </button>
 
-         <div className="border border-gray-100  flex bg-white text-black items-center rounded-3xl p-3 gap-2 w-[150px] h-[50px] ml-[350px] transition-transform duration-300 hover:scale-105">
+           <div className="border border-gray-100  flex bg-white text-black items-center rounded-3xl p-3 gap-2 w-[150px] h-[50px] ml-[350px] transition-transform duration-300 hover:scale-105">
                 <a
                     href="/resume.pdf"
                     target="_blank"
                     className="relative group"
                 >
-                    <svg
+                   <div className="flex gap-2">
+                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -88,6 +103,9 @@ export default function Hero(){
                     />
                     </svg>
 
+                     <span className="text-smibold">Resume</span>
+                   </div>
+
                    
                     <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 
                     opacity-0 group-hover:opacity-100 
@@ -97,7 +115,8 @@ export default function Hero(){
                     ">
                     Resume
                     </span>
-                </a> Resume
+                   
+                </a> 
                 </div>
           </div>
          </div>
