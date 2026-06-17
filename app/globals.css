@@ -109,3 +109,8 @@ body {
   opacity: 0;
   animation: buttonReveal 1s ease-out 1.2s forwards;
 }
+
+html,
+body {
+  scroll-behavior: smooth;
+}

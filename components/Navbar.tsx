@@ -6,13 +6,21 @@ export default function Navbar() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
+    const container = document.getElementById("scroll-container");
+
+    if (!container) return;
+
     const handleScroll = () => {
-      // show navbar after landing (1 screen height)
-      setShow(window.scrollY > window.innerHeight - 80);
+      setShow(container.scrollTop > window.innerHeight - 80);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleScroll();
+
+    container.addEventListener("scroll", handleScroll);
+
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -24,7 +32,6 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        
         {/* Logo */}
         <div className="flex items-center gap-3 cursor-pointer">
           <img
@@ -36,16 +43,31 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center gap-10">
-          <a href="#home" className="text-gray-300 hover:text-red-500 transition">
+          <a
+            href="#home"
+            className="text-gray-300 hover:text-red-500 transition"
+          >
             Home
           </a>
-          <a href="#projects" className="text-gray-300 hover:text-red-500 transition">
+
+          <a
+            href="#projects"
+            className="text-gray-300 hover:text-red-500 transition"
+          >
             Projects
           </a>
-          <a href="#experience" className="text-gray-300 hover:text-red-500 transition">
+
+          <a
+            href="#experience"
+            className="text-gray-300 hover:text-red-500 transition"
+          >
             Experience
           </a>
-          <a href="#skills" className="text-gray-300 hover:text-red-500 transition">
+
+          <a
+            href="#skills"
+            className="text-gray-300 hover:text-red-500 transition"
+          >
             Skills
           </a>
         </div>
