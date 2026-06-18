@@ -1,6 +1,7 @@
 import Landing from "@/components/Landing";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -17,6 +18,10 @@ export default function Home() {
 
         <section className="h-screen snap-start">
           <Hero />
+        </section>
+
+        <section className="h-screen snap-start">
+          <About />
         </section>
       </main>
     </div>
