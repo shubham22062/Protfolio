@@ -7,7 +7,7 @@ export default function About(){
                 <p className="text-red-400">This is my page..</p>
                
                 <p>Hi I'm Shubham</p>
-                
+                <p> A passinoate full stack developer..</p>
 
             </div>
         </div>
