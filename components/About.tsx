@@ -16,12 +16,14 @@ export default function About() {
         Who Am I
       </h1>
 
-      <span className="block text-center pt-4 text-red-500 text-7xl font-bold hover:text-white transition">
+      <span className="block text-center pt-4 text-red-500 text-7xl font-bold hover:animate-bounce transition">
         About Me.
       </span>
 
       {/* GitHub Card */}
-      <div className="mt-16 w-[650px] h-[300px] max-w-3xl bg-black/40 border border-gray-800 rounded-2xl p-6 transition-transform duration-300 hover:scale-105">
+      <div className="flex gap-18">
+        <div className="ml-10">
+        <div className="mt-16 w-[650px] h-[300px] max-w-3xl bg-black/40 border border-gray-800 rounded-2xl p-6 transition-transform duration-300 hover:scale-105">
       <a href="https://github.com/shubham22062"
         target="_blank"
         rel="noopener noreferrer">
@@ -98,10 +100,63 @@ export default function About() {
     </a>
 
     </div>
+      </div>
+
+
+    <div>
+        <h1 className="font-semibold text-4xl mt-15">Comfortable shipping, not just prototyping.</h1>
+        <p className="mt-8 text-gray-400 max-w-xl">I'm a final-year Computer Engineering student at NIMS Institute of Engineering & Technology, graduating in 2026. 
+            Most of what I build ends up deployed with real users attached — MeshSpire and my Financial Dashboard are both running in production,
+             which forces a different level of care than a class project ever does.</p>
+
+        <p className="mt-4 text-gray-400 max-w-xl">Lately I've been pulling GenAI into the stack: retrieval-augmented pipelines, agentic workflows, and vector search, alongside the MERN and WebRTC work I started with. I also keep my problem-solving sharp through competitive programming 
+            — I've competed in Flipkart GRiD — and contribute to open source through SSOC.</p>
+
+            <div className="mt-16 flex gap-15 ml-10">
+                <a
+                  href="https://github.com/shubham22062"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                >
+                    <img src="github.svg" alt="github" className="w-12 h-12 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/shubham-awasthi-310520291/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                >
+                    <img src="Linkedin.svg" alt="linkedIn" className="w-12 h-12 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+                </a>
+
+
+                <a
+                  href="https://x.com/Awa24777Shubham"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                >
+                    <img src="twitter.svg" alt="twitter" className="w-12 h-12 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+                </a>
+
+
+                <a
+                    href="mailto:shubhamawasthi021@gmail.com"
+                    aria-label="Send me an email"
+                
+                >
+                    <img src="email.svg" alt="email" className="w-12 h-12 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+                </a>
+                
+                
+            </div>
+    </div>
 
       
       
-
+      </div>
     </div>
   );
 }
