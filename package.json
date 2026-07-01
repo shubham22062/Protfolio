@@ -16,6 +16,7 @@
     "next": "16.2.9",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "react-github-calendar": "^4.5.11",
     "react-simple-typewriter": "^5.0.1",
     "react-type-animation": "^3.2.0",
     "three": "^0.184.0"
