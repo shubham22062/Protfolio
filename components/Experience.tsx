@@ -39,13 +39,21 @@ export default function Experience() {
         <div className="absolute top-0 mt-65 ml-4">
         <img src="https://brandlogos.net/wp-content/uploads/2023/10/1698290270-4070-IBM-logo-1972.jpg" alt="Ibmimage" className="w-13 h-13 rounded-full"/>
       </div>
-     <div className="absolute top-0 mt-60 ml-20 w-[600px] h-[300px] rounded-2xl border border-gray-800 bg-black/40 backdrop-blur-md p-4">
+     <div className="absolute top-0 mt-60 ml-20 w-[600px] h-[300px] rounded-2xl border-2 border-amber-50 bg-black/40 backdrop-blur-md p-4 shadow-amber-50">
 
-     <div className="flex gap-2">
-        <h1 className="text-2xl text-black pt-1">IBM</h1>
-        <span className="font-bold text-gray-400 text-3xl">-</span>
-        <span className="text-2xl text-red-500 pt-1">Web Development Intern</span>
-     </div>
+     <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
+            <h1 className="text-lg font-semibold text-white">IBM</h1>
+            <span className="text-2xl font-bold text-white">-</span>
+            <span className="text-lg font-semibold text-red-500">
+            Web Development Intern
+            </span>
+        </div>
+
+        <span className="text-sm text-gray-400 whitespace-nowrap">
+            June 2024 – Aug 2024
+        </span>
+        </div>
      </div>
       </div>
       
