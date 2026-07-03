@@ -2,6 +2,7 @@ import Landing from "@/components/Landing";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
 
         <section className="h-screen snap-start">
           <About />
+        </section>
+
+        <section className="h-screen snap-start">
+          <Experience/>
         </section>
       </main>
     </div>
