@@ -1,5 +1,7 @@
 export default function Projects(){
     return(
-        <h1>Here is my projects..</h1>
+        <div className="pt-24">
+            <h1 className="text-center text-red-500 animate-bounce text-6xl">Featured Projects</h1>
+        </div>
     )
 }
