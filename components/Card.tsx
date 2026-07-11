@@ -1,13 +1,59 @@
+"use client";
+
+import { motion,Variants } from "framer-motion";
+
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 80,
+    scale: 0.92,
+    filter: "blur(10px)",
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.7,
+      ease: "easeOut",
+    },
+  },
+};
+
 export default function Card() {
   return (
     <div>
-      <div className="mt-15 ml-4 flex gap-8">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.25 }}
+        className="mt-15 px-4 flex flex-wrap justify-center gap-8"
+      >
         {/* MeshSpire */}
-        <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
+        <motion.div
+          variants={cardVariants}
+          whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.3 },
+          }}
+          className="border-2 border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
+        >
           <img
             src="Meshspire.svg"
             alt="meshspire"
-            className="w-[450px] h-[200px]"
+            className="w-full h-[200px] object-cover rounded-lg"
           />
 
           <span className="font-bold text-red-500 text-xl block pt-5">
@@ -24,24 +70,31 @@ export default function Card() {
             growth and reliable backend operations.
           </p>
 
-          <div className="mt-3 flex gap-4">
-            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">
+          <div className="mt-auto pt-6 flex gap-4">
+            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
               View Live
             </button>
 
-            <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
+            <button className="bg-white border border-white text-black text-sm rounded-md px-4 py-2 flex items-center gap-2 transition-transform duration-300 hover:scale-105">
               <img src="github.svg" alt="github" className="w-4 h-4" />
               Github
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Finance Dashboard */}
-        <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
+        <motion.div
+          variants={cardVariants}
+          whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.3 },
+          }}
+          className="border-2 border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
+        >
           <img
             src="Finance.svg"
             alt="Finance-dashboard"
-            className="w-[450px] h-[200px]"
+            className="w-full h-[200px] object-cover rounded-lg"
           />
 
           <span className="font-bold text-red-500 text-xl block pt-5">
@@ -59,24 +112,31 @@ export default function Card() {
             management experience.
           </p>
 
-          <div className="mt-3 flex gap-4">
-            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">
+          <div className="mt-auto pt-6 flex gap-4">
+            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
               View Live
             </button>
 
-            <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
+            <button className="bg-white border border-white text-black text-sm rounded-md px-4 py-2 flex items-center gap-2 transition-transform duration-300 hover:scale-105">
               <img src="github.svg" alt="github" className="w-4 h-4" />
               Github
             </button>
           </div>
-        </div>
+        </motion.div>
 
         {/* Awast AI */}
-        <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
+        <motion.div
+          variants={cardVariants}
+          whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.3 },
+          }}
+          className="border-2 border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
+        >
           <img
             src="AwastAi.svg"
             alt="AwastAi"
-            className="w-[450px] h-[200px]"
+            className="w-full h-[200px] object-cover rounded-lg"
           />
 
           <span className="font-bold text-red-500 text-xl block pt-5">
@@ -91,21 +151,28 @@ export default function Card() {
             contextual assistance in a fast and seamless experience.
           </p>
 
-          <div className="mt-3 flex gap-4">
-            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">
+          <div className="mt-auto pt-6 flex gap-4">
+            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
               View Live
             </button>
 
-            <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
+            <button className="bg-white border border-white text-black text-sm rounded-md px-4 py-2 flex items-center gap-2 transition-transform duration-300 hover:scale-105">
               <img src="github.svg" alt="github" className="w-4 h-4" />
               Github
             </button>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      <div className="flex justify-center mt-6">
-        <button className="bg-red-500 border border-red-500 rounded-2xl font-semibold text-lg p-4 flex gap-5 w-[150px] h-[60px] text-center transition-transform duration-300 hover:scale-105 hover:text-black">
+      <div className="flex justify-center mt-8 px-4">
+        <motion.button
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+          whileHover={{ scale: 1.08 }}
+          className="bg-red-500 border border-red-500 rounded-2xl font-semibold text-lg px-6 py-4 flex items-center justify-center gap-3 w-[170px]"
+        >
           See All
 
           <svg
@@ -114,7 +181,7 @@ export default function Card() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="size-6"
+            className="w-6 h-6"
           >
             <path
               strokeLinecap="round"
@@ -122,7 +189,7 @@ export default function Card() {
               d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
             />
           </svg>
-        </button>
+        </motion.button>
       </div>
     </div>
   );
