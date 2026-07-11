@@ -1,74 +1,129 @@
-export default function Card(){
-    return (
-        <div>
-            <div className="mt-10 ml-4 flex gap-8">
+export default function Card() {
+  return (
+    <div>
+      <div className="mt-15 ml-4 flex gap-8">
+        {/* MeshSpire */}
+        <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
+          <img
+            src="Meshspire.svg"
+            alt="meshspire"
+            className="w-[450px] h-[200px]"
+          />
 
-            <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
-             <img src="Meshspire.svg" alt="meshspire" className="w-[450px] h-[200px]"/>
-             <span className="font-bold text-red-500 text-xl block pt-5">Meshspire</span>
-             <p className="text-gray-400 pt-3 text-sm">MeshSpire is a production-ready, real-time tutoring platform that connects students and tutors through live video sessions, instant messaging, and secure online payments. Built with a scalable monorepo architecture, it leverages Next.js, React, Node.js, PostgreSQL, Prisma, WebRTC, and AWS to deliver a seamless, high-performance learning experience while supporting efficient growth and reliable backend operations.</p>
-             <div className="mt-3 flex gap-4">
-                <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">View Live</button>
-                <div>
-                    
-                     <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
-                        <img src="github.svg" alt="github" className="w-4 h-4 bg-white"/>
-                        Github</button>
-                </div>
-                
-             </div>
-            </div>
+          <span className="font-bold text-red-500 text-xl block pt-5">
+            Meshspire
+          </span>
 
+          <p className="text-gray-400 pt-3 text-sm">
+            MeshSpire is a production-ready, real-time tutoring platform that
+            connects students and tutors through live video sessions, instant
+            messaging, and secure online payments. Built with a scalable
+            monorepo architecture, it leverages Next.js, React, Node.js,
+            PostgreSQL, Prisma, WebRTC, and AWS to deliver a seamless,
+            high-performance learning experience while supporting efficient
+            growth and reliable backend operations.
+          </p>
 
-             <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
-             <img src="Meshspire.svg" alt="meshspire" className="w-[450px] h-[200px]"/>
-             <span className="font-bold text-red-500 text-xl block pt-5">Meshspire</span>
-             <p className="text-gray-400 pt-3 text-sm">MeshSpire is a production-ready, real-time tutoring platform that connects students and tutors through live video sessions, instant messaging, and secure online payments. Built with a scalable monorepo architecture, it leverages Next.js, React, Node.js, PostgreSQL, Prisma, WebRTC, and AWS to deliver a seamless, high-performance learning experience while supporting efficient growth and reliable backend operations.</p>
-             <div className="mt-3 flex gap-4">
-                <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">View Live</button>
-                <div>
-                    
-                     <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
-                        <img src="github.svg" alt="github" className="w-4 h-4 bg-white"/>
-                        Github</button>
-                </div>
-                
-             </div>
-            </div>
+          <div className="mt-3 flex gap-4">
+            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">
+              View Live
+            </button>
 
-
-
-
-             <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
-             <img src="Meshspire.svg" alt="meshspire" className="w-[450px] h-[200px]"/>
-             <span className="font-bold text-red-500 text-xl block pt-5">Meshspire</span>
-             <p className="text-gray-400 pt-3 text-sm">MeshSpire is a production-ready, real-time tutoring platform that connects students and tutors through live video sessions, instant messaging, and secure online payments. Built with a scalable monorepo architecture, it leverages Next.js, React, Node.js, PostgreSQL, Prisma, WebRTC, and AWS to deliver a seamless, high-performance learning experience while supporting efficient growth and reliable backend operations.</p>
-             <div className="mt-3 flex gap-4">
-                <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">View Live</button>
-                <div>
-                    
-                     <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
-                        <img src="github.svg" alt="github" className="w-4 h-4 bg-white"/>
-                        Github</button>
-                </div>
-                
-             </div>
-            </div>
-
-            
-
+            <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
+              <img src="github.svg" alt="github" className="w-4 h-4" />
+              Github
+            </button>
+          </div>
         </div>
-        <div className="flex justify-center mt-6">
-            <button className="bg-red-500 border border-red-500 rounded-2xl font-semibold text-lg p-4 flex gap-5 w-[150px] h-[60px] text-center transition-transform duration-300 hover:scale-105 hover:text-black">
-                See All
-                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-            </svg>
-                </button>
+
+        {/* Finance Dashboard */}
+        <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
+          <img
+            src="Finance.svg"
+            alt="Finance-dashboard"
+            className="w-[450px] h-[200px]"
+          />
+
+          <span className="font-bold text-red-500 text-xl block pt-5">
+            Finance Dashboard
+          </span>
+
+          <p className="text-gray-400 pt-3 text-sm">
+            Financial Dashboard System is a production-ready, full-stack
+            personal finance platform that enables users to track income,
+            expenses, and spending trends through interactive charts and
+            real-time analytics. Built with React.js, Node.js, Express,
+            MongoDB, and Chart.js, it features secure JWT authentication,
+            customizable date-range filtering, and a responsive mobile-first
+            interface to deliver a seamless, scalable, and intuitive financial
+            management experience.
+          </p>
+
+          <div className="mt-3 flex gap-4">
+            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">
+              View Live
+            </button>
+
+            <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
+              <img src="github.svg" alt="github" className="w-4 h-4" />
+              Github
+            </button>
+          </div>
         </div>
-          
-          
+
+        {/* Awast AI */}
+        <div className="border-2 border-amber-50 rounded-2xl w-[450px] h-[500px] transition-transform duration-300 hover:scale-105 p-4">
+          <img
+            src="AwastAi.svg"
+            alt="AwastAi"
+            className="w-[450px] h-[200px]"
+          />
+
+          <span className="font-bold text-red-500 text-xl block pt-5">
+            Awast AI
+          </span>
+
+          <p className="text-gray-400 pt-3 text-sm">
+            Awast AI is a lightweight conversational AI assistant that delivers
+            intelligent, real-time responses through a clean and intuitive chat
+            interface. Built using modern web technologies and LLM integration,
+            it enables users to ask questions, generate content, and receive
+            contextual assistance in a fast and seamless experience.
+          </p>
+
+          <div className="mt-3 flex gap-4">
+            <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md p-2">
+              View Live
+            </button>
+
+            <button className="bg-white border border-white text-black text-sm rounded-md p-2 flex gap-1">
+              <img src="github.svg" alt="github" className="w-4 h-4" />
+              Github
+            </button>
+          </div>
         </div>
-        
-    )
+      </div>
+
+      <div className="flex justify-center mt-6">
+        <button className="bg-red-500 border border-red-500 rounded-2xl font-semibold text-lg p-4 flex gap-5 w-[150px] h-[60px] text-center transition-transform duration-300 hover:scale-105 hover:text-black">
+          See All
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  );
 }
