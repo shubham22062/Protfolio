@@ -166,29 +166,64 @@ export default function Card() {
 
       <div className="flex justify-center mt-8 px-4">
         <motion.button
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{  amount: 0.25  }}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          whileHover={{ scale: 1.08 }}
-          className="bg-red-500 border border-red-500 rounded-2xl font-semibold text-lg px-6 py-4 flex items-center justify-center gap-3 w-[170px] hover:text-black transition-transform duration-300 hover:scale-105"
+        initial={{ opacity: 0, y: 40, scale: 0.9 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ amount: 0.25 }}
+        transition={{
+            delay: 0.8,
+            duration: 0.7,
+            ease: [0.22, 1, 0.36, 1],
+        }}
+        whileHover={{
+            scale: 1.08,
+            y: -4,
+            transition: {
+            duration: 0.3,
+            ease: "easeOut",
+            },
+        }}
+        whileTap={{
+            scale: 0.95,
+        }}
+        className="
+            bg-red-500 
+            border border-red-500 
+            rounded-2xl 
+            font-semibold 
+            text-lg 
+            px-6 
+            py-4 
+            flex 
+            items-center 
+            justify-center 
+            gap-3 
+            w-[170px]
+            hover:text-black
+        "
         >
-          See All
+        See All
 
-          <svg
+        <motion.svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
             className="w-6 h-6"
-          >
+            whileHover={{
+            x: 6,
+            transition: {
+                duration: 0.3,
+                ease: "easeOut",
+            },
+            }}
+        >
             <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
             />
-          </svg>
+        </motion.svg>
         </motion.button>
       </div>
     </div>
