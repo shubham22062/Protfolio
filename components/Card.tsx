@@ -38,7 +38,7 @@ export default function Card() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{  amount: 0.25 }}
         className="mt-15 px-4 flex flex-wrap justify-center gap-8"
       >
         {/* MeshSpire */}
@@ -168,7 +168,7 @@ export default function Card() {
         <motion.button
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{  amount: 0.25  }}
           transition={{ delay: 0.8, duration: 0.6 }}
           whileHover={{ scale: 1.08 }}
           className="bg-red-500 border border-red-500 rounded-2xl font-semibold text-lg px-6 py-4 flex items-center justify-center gap-3 w-[170px] hover:text-black transition-transform duration-300 hover:scale-105"

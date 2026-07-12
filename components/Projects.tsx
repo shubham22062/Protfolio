@@ -27,7 +27,7 @@ export default function Projects() {
         variants={headingVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{amount: 0.5 }}
         className="text-center text-red-500 text-6xl font-bold animate-bounce"
       >
         Stuff I Built
