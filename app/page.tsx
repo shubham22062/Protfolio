@@ -18,19 +18,19 @@ export default function Home() {
           <Landing />
         </section>
 
-        <section className="h-screen snap-start">
+        <section id="home" className="h-screen snap-start">
           <Hero />
         </section>
 
-        <section className="h-screen snap-start">
+        <section id="about" className="h-screen snap-start">
           <About />
         </section>
 
-        <section className="h-screen snap-start">
+        <section id="experience" className="h-screen snap-start">
           <Experience/>
         </section>
 
-        <section className="h-screen snap-start">
+        <section id="projects" className="h-screen snap-start">
           <Projects/>
         </section>
       </main>

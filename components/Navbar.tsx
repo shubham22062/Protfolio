@@ -23,6 +23,17 @@ export default function Navbar() {
     };
   }, []);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
@@ -33,7 +44,10 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="flex items-center gap-3 cursor-pointer">
+        <div
+          onClick={() => scrollToSection("landing")}
+          className="flex items-center gap-3 cursor-pointer"
+        >
           <img
             src="/hacker.svg"
             alt="logo"
@@ -43,33 +57,33 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex items-center gap-10">
-          <a
-            href="#home"
-            className="text-gray-300 hover:text-red-500 transition"
+          <button
+            onClick={() => scrollToSection("home")}
+            className="text-gray-300 hover:text-red-500 transition cursor-pointer"
           >
             Home
-          </a>
+          </button>
 
-          <a
-            href="#projects"
-            className="text-gray-300 hover:text-red-500 transition"
+          <button
+            onClick={() => scrollToSection("projects")}
+            className="text-gray-300 hover:text-red-500 transition cursor-pointer"
           >
             Projects
-          </a>
+          </button>
 
-          <a
-            href="#experience"
-            className="text-gray-300 hover:text-red-500 transition"
+          <button
+            onClick={() => scrollToSection("experience")}
+            className="text-gray-300 hover:text-red-500 transition cursor-pointer"
           >
             Experience
-          </a>
+          </button>
 
-          <a
-            href="#skills"
-            className="text-gray-300 hover:text-red-500 transition"
+          <button
+            onClick={() => scrollToSection("skills")}
+            className="text-gray-300 hover:text-red-500 transition cursor-pointer"
           >
             Skills
-          </a>
+          </button>
         </div>
 
         {/* Right Section */}
