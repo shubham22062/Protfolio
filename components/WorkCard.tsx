@@ -101,7 +101,7 @@ export default function WorkCard() {
               <div className="mt-auto pt-4 flex items-center gap-3">
                 <a
                   href={project.liveLink}
-                  className="flex-1 text-center bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-900 font-medium text-xs tracking-wide uppercase rounded-lg py-2.5 shadow-sm transition-all duration-200 hover:bg-zinc-800 dark:hover:bg-zinc-200"
+                  className="flex-1 text-center bg-zinc-900 dark:bg-red-500 text-white dark:text-zinc-900 font-medium text-xs tracking-wide uppercase rounded-lg py-2.5 shadow-sm transition-all duration-200 hover:bg-zinc-800 dark:hover:bg-zinc-200"
                 >
                   View Live
                 </a>
