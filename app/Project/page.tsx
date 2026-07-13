@@ -7,7 +7,7 @@ export default function MyWork(){
     const router = useRouter();
     return(
         <div className="mt-10 relative">
-            <h1 className="text-red-500 font-semibold text-4xl text-center animate-bounce">My Work</h1>
+            <h1 className="text-red-500 font-semibold text-5xl text-center animate-bounce">My Work</h1>
              <button
           onClick={() => router.push("/")}
         className="absolute top-6 right-6 text-white hover:text-red-500 transition-colors"
