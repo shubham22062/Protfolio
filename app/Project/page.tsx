@@ -1,5 +1,6 @@
 "use client"
 
+import WorkCard from "@/components/WorkCard";
 import { useRouter } from "next/navigation";
 
 export default function MyWork(){
@@ -26,6 +27,7 @@ export default function MyWork(){
           />
         </svg>
       </button>
+        <WorkCard/>
         </div>
     )
 }
