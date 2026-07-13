@@ -1,6 +1,7 @@
 "use client";
 
 import { motion,Variants } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -32,6 +33,8 @@ const cardVariants: Variants = {
 };
 
 export default function Card() {
+
+  const router = useRouter();
   return (
     <div>
       <motion.div
@@ -166,6 +169,7 @@ export default function Card() {
 
       <div className="flex justify-center mt-8 px-4">
         <motion.button
+         onClick={() => router.push("/Project")}
         initial={{ opacity: 0, y: 40, scale: 0.9 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         viewport={{ amount: 0.25 }}
