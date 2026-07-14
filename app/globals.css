@@ -196,3 +196,7 @@ video {
   will-change: transform;
   z-index: 99999;
 }
+
+html {
+  scroll-behavior: smooth;
+}
