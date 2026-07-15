@@ -1,5 +1,6 @@
 "use client"
 
+import Fixedlogo from "@/components/Fixedlogo";
 import Footer from "@/components/Footer";
 import WorkCard from "@/components/WorkCard";
 import { useRouter } from "next/navigation";
@@ -31,7 +32,9 @@ export default function MyWork(){
         <WorkCard/>
         <div className="mt-6">
           <Footer/>
+          
         </div>
+        <Fixedlogo/>
         </div>
     )
 }
