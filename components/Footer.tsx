@@ -21,19 +21,19 @@ export default function Footer(){
 
             <div className="flex gap-5 justify-center pt-4">
                 <a href="https://github.com/shubham22062">
-              <img src="github.svg" className="w-6 h-6 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+              <img src="github.svg" className="w-10 h-10 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
             </a>
 
             <a href="https://www.linkedin.com/in/shubham-awasthi-310520291/">
-              <img src="Linkedin.svg" className="w-6 h-6 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+              <img src="Linkedin.svg" className="w-10 h-10 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
             </a>
 
             <a href="https://x.com/Awa24777Shubham">
-              <img src="twitter.svg" className="w-6 h-6 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+              <img src="twitter.svg" className="w-10 h-10 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
             </a>
 
             <a href="mailto:shubhamawasthi021@gmail.com">
-              <img src="email.svg" className="w-6 h-6 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+              <img src="email.svg" className="w-10 h-10 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
             </a>
             </div>
         </div>
