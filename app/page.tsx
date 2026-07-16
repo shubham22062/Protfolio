@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -32,6 +33,10 @@ export default function Home() {
 
         <section id="projects" className="h-screen snap-start">
           <Projects/>
+        </section>
+
+        <section id="skills" className="h-screen snap-start">
+          <Skills/>
         </section>
       </main>
     </div>
