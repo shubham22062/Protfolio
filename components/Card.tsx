@@ -167,7 +167,7 @@ export default function Card() {
         </motion.div>
       </motion.div>
 
-      <div className="flex justify-center mt-8 px-4">
+      <div className="flex justify-center mt-8 px-4 mb-8">
         <motion.button
          onClick={() => router.push("/Project")}
         initial={{ opacity: 0, y: 40, scale: 0.9 }}
@@ -194,14 +194,13 @@ export default function Card() {
             border border-red-500 
             rounded-2xl 
             font-semibold 
-            text-lg 
-            px-6 
-            py-4 
+            text-md
+            p-2
             flex 
             items-center 
             justify-center 
             gap-3 
-            w-[170px]
+            w-[150px]
             hover:text-black
         "
         >

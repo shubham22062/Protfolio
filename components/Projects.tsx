@@ -22,7 +22,7 @@ const headingVariants = {
 
 export default function Projects() {
   return (
-    <section className="pt-24 pb-20">
+    <section className="pt-22 pb-20">
       <motion.h1
         variants={headingVariants}
         initial="hidden"
