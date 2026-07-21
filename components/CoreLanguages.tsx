@@ -7,8 +7,8 @@ export default function CoreLanguages(){
               </div>
 
               <div>
-                <span className="text-xl font-semibold text-red-500">Typescript</span>
-                <span className="text-gray-400 block text-lg">PROFICIENCY</span>
+                <span className="text-2xl font-semibold text-red-500">Typescript</span>
+                <span className="text-gray-400 block text-sm">PROFICIENCY</span>
               </div>
               </div>
         </div>
