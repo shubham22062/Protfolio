@@ -92,7 +92,7 @@ export default function Card() {
             scale: 1.05,
             transition: { duration: 0.3 },
           }}
-          className="border-2 border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
+          className="border border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
         >
           <img
             src="Finance.svg"
@@ -134,7 +134,7 @@ export default function Card() {
             scale: 1.05,
             transition: { duration: 0.3 },
           }}
-          className="border-2 border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
+          className="border border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
         >
           <img
             src="AwastAi.svg"
