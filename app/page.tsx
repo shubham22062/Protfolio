@@ -5,6 +5,7 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import ContactMe from "@/components/ContactMe";
 
 export default function Home() {
   return (
@@ -37,6 +38,10 @@ export default function Home() {
 
         <section id="skills" className="h-screen snap-start">
           <Skills/>
+        </section>
+
+        <section id="skills" className="h-screen snap-start">
+          <ContactMe/>
         </section>
       </main>
     </div>

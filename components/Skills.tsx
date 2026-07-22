@@ -22,7 +22,7 @@ export default function Skills() {
   return (
     <section className="pt-24 px-6 lg:px-20">
       {/* Heading */}
-      <h1 className="text-red-500 text-6xl font-bold text-center animate-bounce">
+      <h1 className="text-red-500 text-5xl font-bold text-center animate-bounce">
         Tech Arsenal
       </h1>
 
