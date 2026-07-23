@@ -10,7 +10,7 @@ export default function ContactMe() {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once:false, amount: 0.3 }}
           transition={{
             duration: 0.8,
             ease: "easeOut",
@@ -19,7 +19,7 @@ export default function ContactMe() {
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{
               duration: 0.6,
               delay: 0.1,
@@ -34,7 +34,7 @@ export default function ContactMe() {
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{
               duration: 0.6,
               delay: 0.2,
@@ -50,7 +50,7 @@ export default function ContactMe() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{
               duration: 0.7,
               delay: 0.3,
@@ -93,7 +93,7 @@ export default function ContactMe() {
         <motion.div
           initial={{ opacity: 0, x: 100, scale: 0.9 }}
           whileInView={{ opacity: 1, x: 0, scale: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{
             duration: 1,
             ease: "easeOut",
