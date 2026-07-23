@@ -100,7 +100,9 @@ export default function Navbar() {
             />
           </a>
 
-          <button className="px-5 py-2 rounded-lg bg-red-500/20 text-white font-semibold hover:bg-red-600/20 hover:scale-105 transition-all duration-300">
+          <button 
+          onClick={()=> scrollToSection("contact")}
+          className="px-5 py-2 rounded-lg bg-red-500/20 text-white font-semibold hover:bg-red-600/20 hover:scale-105 transition-all duration-300">
             Hire Me
           </button>
         </div>

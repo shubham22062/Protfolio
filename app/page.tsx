@@ -50,7 +50,7 @@ export default function Home() {
     <Footer />
   </section>
 
-  <section className="min-h-screen snap-start flex items-center justify-center">
+  <section className="flex items-center justify-center">
     <Fixedlogo />
   </section>
 </main>
