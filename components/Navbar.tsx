@@ -51,7 +51,7 @@ export default function Navbar() {
           <img
             src="/hacker.svg"
             alt="logo"
-            className="w-12 h-12 hover:rotate-12 transition-transform duration-300 hover:scale-105 animate-pulse"
+            className="w-12 h-12 hover:rotate-12 transition-transform duration-300 hover:scale-105  bg-red-500 border-2 border-white rounded-full"
           />
         </div>
 
