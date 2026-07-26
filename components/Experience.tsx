@@ -89,7 +89,7 @@ export default function Experience() {
   const y = useTransform(scrollYProgress, [0, 1], [0, 700]);
 
   return (
-    <section ref={ref} className="relative pt-24 min-h-[160vh]">
+    <section ref={ref} className="relative pt-24 min-h-[180vh] sm:min-h-[160vh] px-4 sm:px-0">
 
       {/* Heading */}
       <motion.h1
@@ -103,7 +103,7 @@ export default function Experience() {
       </motion.h1>
 
       {/* Timeline */}
-      <div className="absolute left-1/2 top-44 -translate-x-1/2">
+      <div className="absolute left-1/2 top-44 -translate-x-1/2 hidden sm:block">
 
         <motion.div
           variants={lineVariants}
@@ -121,17 +121,17 @@ export default function Experience() {
 
       </div>
 
-      <div className="relative mt-24 space-y-40">
+      <div className="relative mt-12 sm:mt-24 space-y-12 sm:space-y-40">
 
         {/* LEFT CARD */}
-        <div className="flex justify-start">
+        <div className="flex justify-center sm:justify-start">
 
           <motion.div
             variants={leftCardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
-            className="relative w-[600px] ml-20"
+            className="relative w-full max-w-[600px] sm:w-[600px] sm:ml-20"
           >
 
             <motion.img
@@ -190,14 +190,14 @@ export default function Experience() {
         </div>
 
         {/* RIGHT CARD */}
-        <div className="absolute right-0 top-44">
+        <div className="w-full flex justify-center sm:absolute sm:right-0 sm:top-44 sm:justify-end">
 
           <motion.div
             variants={rightCardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
-            className="relative w-[600px] mr-20"
+            className="relative w-full max-w-[600px] sm:w-[600px] sm:mr-20"
           >
 
             <motion.img
