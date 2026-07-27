@@ -241,7 +241,7 @@ export default function Experience() {
               </div>
 
               {/* YOUR ORIGINAL PARAGRAPH (UNCHANGED) */}
-              <p className="mt-4 sm:mt-8 text-sm sm:text-base text-gray-400 leading-6 sm:leading-6">
+              <p className="mt-4 sm:mt-8 text-sm sm:text-base text-gray-400 leading-6 sm:leading-7">
                 During my internship at Eye Craft Security as a Full Stack
                 Developer Intern, I contributed to building and enhancing
                 security-focused web applications by developing both frontend and

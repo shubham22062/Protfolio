@@ -2,12 +2,12 @@
 
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import * as THREE from "three";
 
-function LogoModel(){
+function LogoModel({ scale }: { scale: number }) {
 
-    const {scene} = useGLTF("logo.glb");
+    const { scene } = useGLTF("logo.glb");
 
     useEffect(() => {
         scene.traverse((child) => {
@@ -22,11 +22,11 @@ function LogoModel(){
     }, [scene]);
 
 
-    return(
+    return (
         <primitive
             object={scene}
-            scale={1.5}
-            position={[0,0,0]}
+            scale={scale}
+            position={[0, 0, 0]}
         />
     )
 }
@@ -34,22 +34,35 @@ function LogoModel(){
 useGLTF.preload("logo.glb")
 
 
-export default function Fixedlogo(){
-    return(
-        <div className="pt-10 w-full h-[200px]">
+export default function Fixedlogo() {
+    const [scale, setScale] = useState(1.5);
 
-            <Canvas camera={{ position:[0,0,5] }}>
+    useEffect(() => {
+        const updateScale = () => {
+            setScale(window.innerWidth < 640 ? 1.1 : 1.5);
+        };
 
-                <ambientLight intensity={1.5}/>
+        updateScale();
+        window.addEventListener("resize", updateScale);
 
-                <directionalLight 
-                    position={[3,3,3]} 
+        return () => window.removeEventListener("resize", updateScale);
+    }, []);
+
+    return (
+        <div className="pt-10 w-full h-[160px] sm:h-[200px]">
+
+            <Canvas camera={{ position: [0, 0, 5] }}>
+
+                <ambientLight intensity={1.5} />
+
+                <directionalLight
+                    position={[3, 3, 3]}
                     intensity={2}
                 />
 
-                <LogoModel/>
+                <LogoModel scale={scale} />
 
-                <OrbitControls 
+                <OrbitControls
                     enableZoom={false}
                 />
 

@@ -19,6 +19,7 @@
     "react-github-calendar": "^4.5.11",
     "react-simple-typewriter": "^5.0.1",
     "react-type-animation": "^3.2.0",
+    "resend": "^6.18.0",
     "three": "^0.184.0"
   },
   "devDependencies": {
