@@ -1,6 +1,6 @@
 "use client";
 
-import { motion,Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useRouter } from "next/navigation";
 
 const containerVariants: Variants = {
@@ -41,8 +41,8 @@ export default function Card() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{  amount: 0.25 }}
-        className="mt-15 px-4 flex flex-wrap justify-center gap-8"
+        viewport={{ amount: 0.25 }}
+        className="mt-8 sm:mt-15 px-4 flex flex-wrap justify-center gap-6 sm:gap-8"
       >
         {/* MeshSpire */}
         <motion.div
@@ -51,15 +51,15 @@ export default function Card() {
             scale: 1.05,
             transition: { duration: 0.3 },
           }}
-          className="border border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
+          className="border border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-fit sm:min-h-[500px] flex flex-col p-4"
         >
           <img
             src="Meshspire.svg"
             alt="meshspire"
-            className="w-full h-[200px] object-cover rounded-lg"
+            className="w-full h-[180px] sm:h-[200px] object-cover rounded-lg"
           />
 
-          <span className="font-bold text-red-500 text-xl block pt-5">
+          <span className="font-bold text-red-500 text-lg sm:text-xl block pt-4 sm:pt-5">
             Meshspire
           </span>
 
@@ -73,7 +73,7 @@ export default function Card() {
             growth and reliable backend operations.
           </p>
 
-          <div className="mt-auto pt-6 flex gap-4">
+          <div className="mt-auto pt-6 flex flex-wrap gap-3 sm:gap-4">
             <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
               View Live
             </button>
@@ -92,15 +92,15 @@ export default function Card() {
             scale: 1.05,
             transition: { duration: 0.3 },
           }}
-          className="border border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
+          className="border border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-fit sm:min-h-[500px] flex flex-col p-4"
         >
           <img
             src="Finance.svg"
             alt="Finance-dashboard"
-            className="w-full h-[200px] object-cover rounded-lg"
+            className="w-full h-[180px] sm:h-[200px] object-cover rounded-lg"
           />
 
-          <span className="font-bold text-red-500 text-xl block pt-5">
+          <span className="font-bold text-red-500 text-lg sm:text-xl block pt-4 sm:pt-5">
             Finance Dashboard
           </span>
 
@@ -115,7 +115,7 @@ export default function Card() {
             management experience.
           </p>
 
-          <div className="mt-auto pt-6 flex gap-4">
+          <div className="mt-auto pt-6 flex flex-wrap gap-3 sm:gap-4">
             <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
               View Live
             </button>
@@ -134,15 +134,15 @@ export default function Card() {
             scale: 1.05,
             transition: { duration: 0.3 },
           }}
-          className="border border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-[500px] flex flex-col p-4"
+          className="border border-amber-50 rounded-2xl w-full sm:w-[450px] min-h-fit sm:min-h-[500px] flex flex-col p-4"
         >
           <img
             src="AwastAi.svg"
             alt="AwastAi"
-            className="w-full h-[200px] object-cover rounded-lg"
+            className="w-full h-[180px] sm:h-[200px] object-cover rounded-lg"
           />
 
-          <span className="font-bold text-red-500 text-xl block pt-5">
+          <span className="font-bold text-red-500 text-lg sm:text-xl block pt-4 sm:pt-5">
             Awast AI
           </span>
 
@@ -154,7 +154,7 @@ export default function Card() {
             contextual assistance in a fast and seamless experience.
           </p>
 
-          <div className="mt-auto pt-6 flex gap-4">
+          <div className="mt-auto pt-6 flex flex-wrap gap-3 sm:gap-4">
             <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
               View Live
             </button>
@@ -169,27 +169,27 @@ export default function Card() {
 
       <div className="flex justify-center mt-8 px-4 mb-8">
         <motion.button
-         onClick={() => router.push("/Project")}
-        initial={{ opacity: 0, y: 40, scale: 0.9 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        viewport={{ amount: 0.25 }}
-        transition={{
+          onClick={() => router.push("/Project")}
+          initial={{ opacity: 0, y: 40, scale: 0.9 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ amount: 0.25 }}
+          transition={{
             delay: 0.8,
             duration: 0.7,
             ease: [0.22, 1, 0.36, 1],
-        }}
-        whileHover={{
+          }}
+          whileHover={{
             scale: 1.08,
             y: -4,
             transition: {
-            duration: 0.3,
-            ease: "easeOut",
+              duration: 0.3,
+              ease: "easeOut",
             },
-        }}
-        whileTap={{
+          }}
+          whileTap={{
             scale: 0.95,
-        }}
-        className="
+          }}
+          className="
             bg-red-500 
             border border-red-500 
             rounded-2xl 
@@ -204,9 +204,9 @@ export default function Card() {
             hover:text-black
         "
         >
-        See All
+          See All
 
-        <motion.svg
+          <motion.svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -214,19 +214,19 @@ export default function Card() {
             stroke="currentColor"
             className="w-6 h-6"
             whileHover={{
-            x: 6,
-            transition: {
+              x: 6,
+              transition: {
                 duration: 0.3,
                 ease: "easeOut",
-            },
+              },
             }}
-        >
+          >
             <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
             />
-        </motion.svg>
+          </motion.svg>
         </motion.button>
       </div>
     </div>

@@ -89,7 +89,10 @@ export default function Experience() {
   const y = useTransform(scrollYProgress, [0, 1], [0, 700]);
 
   return (
-    <section ref={ref} className="relative pt-24 min-h-[180vh] sm:min-h-[160vh] px-4 sm:px-0">
+    <section
+      ref={ref}
+      className="relative pt-12 sm:pt-24 min-h-fit sm:min-h-[160vh] px-3 sm:px-0 pb-12 sm:pb-0"
+    >
 
       {/* Heading */}
       <motion.h1
@@ -97,7 +100,7 @@ export default function Experience() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
-        className="text-6xl font-bold text-red-500 text-center animate-bounce"
+        className="text-2xl sm:text-6xl font-bold text-red-500 text-center animate-bounce"
       >
         Where I've Worked
       </motion.h1>
@@ -121,7 +124,7 @@ export default function Experience() {
 
       </div>
 
-      <div className="relative mt-12 sm:mt-24 space-y-12 sm:space-y-40">
+      <div className="relative mt-6 sm:mt-24 space-y-8 sm:space-y-40">
 
         {/* LEFT CARD */}
         <div className="flex justify-center sm:justify-start">
@@ -144,33 +147,33 @@ export default function Experience() {
               }}
               src="https://brandlogos.net/wp-content/uploads/2023/10/1698290270-4070-IBM-logo-1972.jpg"
               alt="IBM"
-              className="absolute -top-6 -left-6 w-14 h-14 rounded-full border-2 border-white"
+              className="absolute -top-4 -left-4 w-10 h-10 sm:-top-6 sm:-left-6 sm:w-14 sm:h-14 rounded-full border-2 border-white"
             />
 
-            <div className="rounded-2xl border-2 border-amber-50 bg-black/40 backdrop-blur-md p-6 transition duration-300 hover:scale-105">
+            <div className="rounded-2xl border-2 border-amber-50 bg-black/40 backdrop-blur-md p-4 sm:p-6 transition duration-300 hover:scale-105">
 
-              <div className="flex justify-between items-center">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
 
-                <div className="flex gap-2 items-center">
-                  <h1 className="text-lg font-semibold text-white">
+                <div className="flex flex-wrap gap-2 items-center">
+                  <h1 className="text-base sm:text-md font-semibold text-white">
                     IBM
                   </h1>
 
-                  <span className="text-white text-2xl">-</span>
+                  <span className="text-white text-xl sm:text-2xl">-</span>
 
-                  <span className="text-lg font-semibold text-red-500">
+                  <span className="text-base sm:text-md font-semibold text-red-500">
                     Web Development Intern
                   </span>
                 </div>
 
-                <span className="text-sm text-gray-400">
+                <span className="text-xs sm:text-sm text-gray-400">
                   June 2024 – Aug 2024
                 </span>
 
               </div>
 
               {/* YOUR ORIGINAL PARAGRAPH (UNCHANGED) */}
-              <p className="mt-8 text-gray-400 leading-7">
+              <p className="mt-4 sm:mt-8 text-sm sm:text-base text-gray-400 leading-6 sm:leading-7">
                 During my internship at IBM as a Web Development Intern, I
                 developed Wellness Buddy, a personalized health and wellness
                 platform focused on promoting SDG-3 (Good Health & Well-being). I
@@ -210,35 +213,35 @@ export default function Experience() {
               }}
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNna6exA-dHyTxZBvGQVKBSnwHGMzXoP-VJDSP4prF9g&s=10"
               alt="Eye Craft Security"
-              className="absolute -top-6 -left-6 w-14 h-14 rounded-full border-2 border-white"
+              className="absolute -top-4 -left-4 w-10 h-10 sm:-top-6 sm:-left-6 sm:w-14 sm:h-14 rounded-full border-2 border-white"
             />
 
-            <div className="rounded-2xl border-2 border-amber-50 bg-black/40 backdrop-blur-md p-6 transition duration-300 hover:scale-105">
+            <div className="rounded-2xl border-2 border-amber-50 bg-black/40 backdrop-blur-md p-4 sm:p-6 transition duration-300 hover:scale-105">
 
-              <div className="flex justify-between items-center">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
 
-                <div className="flex items-center">
+                <div className="flex flex-wrap items-center gap-2">
 
-                  <h1 className="text-lg font-semibold text-white">
+                  <h1 className="text-base sm:text-md font-semibold text-white">
                     Eye Craft Security
                   </h1>
 
-                  <span className="text-white text-2xl">-</span>
+                  <span className="text-white text-xl sm:text-2xl">-</span>
 
-                  <span className="text-lg font-semibold text-red-500">
+                  <span className="text-base sm:text-md font-semibold text-red-500">
                     Full Stack Developer Intern
                   </span>
 
                 </div>
 
-                <span className="text-sm text-gray-400">
+                <span className="text-xs sm:text-sm text-gray-400">
                   Jan 2026 – Apr 2026
                 </span>
 
               </div>
 
               {/* YOUR ORIGINAL PARAGRAPH (UNCHANGED) */}
-              <p className="mt-8 text-gray-400 leading-7">
+              <p className="mt-4 sm:mt-8 text-sm sm:text-base text-gray-400 leading-6 sm:leading-6">
                 During my internship at Eye Craft Security as a Full Stack
                 Developer Intern, I contributed to building and enhancing
                 security-focused web applications by developing both frontend and

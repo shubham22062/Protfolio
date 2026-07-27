@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function ContactMe() {
   return (
-    <section className="min-h-screen bg-black text-white flex items-center justify-center px-8 lg:px-16 py-28 overflow-hidden">
-      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center">
+    <section className="min-h-screen bg-black text-white flex items-center justify-center px-4 sm:px-8 lg:px-16 py-16 sm:py-28 overflow-hidden">
+      <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center">
         {/* Left Side */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -25,7 +25,7 @@ export default function ContactMe() {
               delay: 0.1,
               ease: "easeOut",
             }}
-            className="text-5xl md:text-6xl font-bold mb-5"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-5"
           >
             Let's{" "}
             <span className="text-red-500 animate-pulse">Connect</span>
@@ -40,7 +40,7 @@ export default function ContactMe() {
               delay: 0.2,
               ease: "easeOut",
             }}
-            className="text-gray-400 text-lg leading-8 max-w-lg mb-10"
+            className="text-gray-400 text-base sm:text-lg leading-7 sm:leading-8 max-w-lg mb-8 sm:mb-10"
           >
             Have a project in mind or just want to say hello? I'd love to hear
             from you. Fill out the form below and let's build something amazing
@@ -56,7 +56,7 @@ export default function ContactMe() {
               delay: 0.3,
               ease: "easeOut",
             }}
-            className="space-y-5"
+            className="space-y-4 sm:space-y-5"
           >
             <input
               type="text"
@@ -103,7 +103,7 @@ export default function ContactMe() {
           <motion.img
             src="/Mine.png"
             alt="Shubham"
-            className="h-[720px] object-contain select-none pointer-events-none"
+            className="h-[320px] sm:h-[520px] lg:h-[720px] object-contain select-none pointer-events-none"
             whileHover={{
               scale: 1.03,
               y: -8,

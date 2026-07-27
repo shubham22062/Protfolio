@@ -200,3 +200,11 @@ video {
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 1023px) {
+  .video-mask {
+    -webkit-mask-image: none;
+    mask-image: none;
+    clip-path: none;
+  }
+}

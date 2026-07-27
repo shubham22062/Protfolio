@@ -17,13 +17,12 @@ export default function Hero() {
 
   const [isMuted, setIsMuted] = useState(true);
 
-  const toggleMute = () =>{
-    if(!videoRef.current) return;
+  const toggleMute = () => {
+    if (!videoRef.current) return;
 
     videoRef.current.muted = !videoRef.current.muted;
-    setIsMuted(videoRef.current.muted)
-  }
-
+    setIsMuted(videoRef.current.muted);
+  };
 
   const isInView = useInView(heroRef, {
     amount: 0.4,
@@ -64,7 +63,7 @@ export default function Hero() {
   return (
     <motion.div
       ref={heroRef}
-      className="px-3 pt-5 flex relative min-h-screen"
+      className="px-3 pt-5 flex flex-col lg:flex-row relative min-h-screen"
       initial={{ opacity: 0, y: 120, scale: 0.96 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ amount: 0.4, once: false }}
@@ -88,7 +87,7 @@ export default function Hero() {
         onPause={() => {
           if (!hasEnded) setIsPlaying(false);
         }}
-        className="h-[780px] mt-[20px] ml-[20px] object-cover video-mask opacity-90"
+        className="w-full h-auto max-h-[480px] object-contain mt-[10px] ml-0 lg:w-auto lg:h-[780px] lg:max-h-none lg:mt-[20px] lg:ml-[20px] lg:object-cover video-mask opacity-90"
       >
         <source
           src="https://res.cloudinary.com/dbdvicxun/video/upload/v1781599530/b_Animate_the_characte_online-video-cutter.com_fb230s.mp4"
@@ -96,29 +95,33 @@ export default function Hero() {
         />
       </video>
 
-      {/* GRADIENT */}
-      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent" />
+      {/* GRADIENT — only needed for the desktop layout; on mobile it was
+          painting over the stacked buttons at the bottom of the page */}
+      <div className="hidden lg:block absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black to-transparent" />
 
-        <button onClick={toggleMute}>
-            {isMuted ? (
-                <SpeakerXMarkIcon className="h-7 w-7 text-white hover:scale-105 transition-transform duration-300" />
-            ) : (
-                <SpeakerWaveIcon className="h-7 w-7 text-white hover:scale-105 transition-transform duration-300" />
-            )}
-        </button>
+      <button
+        onClick={toggleMute}
+        className="fixed top-20 right-4 z-[60] lg:absolute lg:top-auto lg:right-auto lg:static"
+      >
+        {isMuted ? (
+          <SpeakerXMarkIcon className="h-7 w-7 text-white hover:scale-105 transition-transform duration-300" />
+        ) : (
+          <SpeakerWaveIcon className="h-7 w-7 text-white hover:scale-105 transition-transform duration-300" />
+        )}
+      </button>
 
       {/* TEXT SECTION */}
-      <div className="pt-70 pl-30">
+      <div className="relative z-10 pt-8 px-4 lg:pt-70 lg:pl-30 lg:px-0">
         {/* NAME */}
         <motion.span
           initial={{ opacity: 0, y: 80, scale: 0.85 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ amount: 0.2 }}
           transition={{
             duration: 0.9,
             ease: [0.22, 1, 0.36, 1],
           }}
-          className="text-6xl font-bold block text-red-500 text-center"
+          className="text-3xl sm:text-4xl lg:text-6xl font-bold block text-red-500 text-center"
         >
           Hi I'm Shubham Awasthi
         </motion.span>
@@ -127,9 +130,9 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ amount: 0.2 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl font-bold text-white text-center pt-4"
+          className="text-2xl sm:text-3xl lg:text-5xl font-bold text-white text-center pt-4"
         >
           <Typewriter
             words={[
@@ -152,13 +155,13 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ amount: 0.2 }}
           transition={{
             duration: 0.8,
             delay: 0.4,
             ease: "easeOut",
           }}
-          className="text-lg text-gray-400 max-w-2xl pt-8 text-center"
+          className="text-base lg:text-lg text-gray-400 max-w-2xl pt-8 text-center mx-auto"
         >
           Driven by curiosity and innovation, I build modern web applications
           that combine clean design with powerful functionality. With expertise
@@ -170,22 +173,22 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ amount: 0.5 }}
+          viewport={{ amount: 0.1 }}
           transition={{
             duration: 0.8,
             delay: 0.7,
             ease: "easeOut",
           }}
-          className="flex items-center gap-6 mt-[50px] pl-10"
+          className="relative z-10 flex flex-col lg:flex-row items-center gap-4 lg:gap-6 mt-8 mb-10 lg:mt-[50px] lg:mb-0 lg:pl-10"
         >
           <button
             onClick={toggleVideo}
-            className="absolute w-[150px] h-[50px] bg-red-500 ml-[150px] text-white px-6 py-3 rounded-full hover:scale-105 transition"
+            className="relative lg:absolute w-[150px] h-[50px] bg-red-500 ml-0 lg:ml-[150px] text-white px-6 py-3 rounded-full hover:scale-105 transition"
           >
             {hasEnded ? "Replay" : isPlaying ? "⏸ Pause" : "▶ Play"}
           </button>
 
-          <div className="border border-gray-100 flex bg-white text-black items-center rounded-3xl p-3 gap-2 w-[150px] h-[50px] ml-[350px] transition-transform duration-300 hover:scale-105">
+          <div className="border border-gray-100 flex bg-white text-black items-center rounded-3xl p-3 gap-2 w-[150px] h-[50px] ml-0 lg:ml-[350px] transition-transform duration-300 hover:scale-105">
             <a href="/resume.pdf" target="_blank" className="relative group">
               <div className="flex gap-2">
                 <svg

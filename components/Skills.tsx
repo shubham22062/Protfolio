@@ -42,7 +42,7 @@ export default function Skills() {
   return (
     <motion.section
       ref={sectionRef}
-      className="pt-24 px-6 lg:px-20"
+      className="pt-16 sm:pt-24 px-4 sm:px-6 lg:px-20 pb-8 sm:pb-0"
       initial="hidden"
       animate={controls}
       variants={{
@@ -63,7 +63,7 @@ export default function Skills() {
     >
       {/* Heading */}
       <motion.h1
-        className="text-red-500 text-5xl font-bold text-center animate-bounce"
+        className="text-3xl sm:text-5xl font-bold text-red-500 text-center animate-bounce"
         variants={{
           hidden: {
             opacity: 0,
@@ -82,10 +82,10 @@ export default function Skills() {
       </motion.h1>
 
       {/* Main Layout */}
-      <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 mt-20 items-start">
+      <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-16 mt-6 sm:mt-20 items-start">
         {/* Sidebar */}
         <motion.div
-          className="flex flex-col gap-6 w-full lg:w-72 shrink-0"
+          className="flex flex-col gap-2 sm:gap-6 w-full lg:w-72 shrink-0"
           variants={{
             hidden: {
               opacity: 0,
@@ -102,7 +102,7 @@ export default function Skills() {
         >
           <button
             onClick={() => setActiveTab("core")}
-            className={`text-left cursor-pointer px-8 py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
+            className={`text-left cursor-pointer text-sm sm:text-base px-4 py-3 sm:px-8 sm:py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
               activeTab === "core"
                 ? "border-red-500 text-red-500"
                 : "border-gray-700 text-white"
@@ -113,7 +113,7 @@ export default function Skills() {
 
           <button
             onClick={() => setActiveTab("frontend")}
-            className={`text-left cursor-pointer px-8 py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
+            className={`text-left cursor-pointer text-sm sm:text-base px-4 py-3 sm:px-8 sm:py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
               activeTab === "frontend"
                 ? "border-red-500 text-red-500"
                 : "border-gray-700 text-white"
@@ -124,7 +124,7 @@ export default function Skills() {
 
           <button
             onClick={() => setActiveTab("backend")}
-            className={`text-left cursor-pointer px-8 py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
+            className={`text-left cursor-pointer text-sm sm:text-base px-4 py-3 sm:px-8 sm:py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
               activeTab === "backend"
                 ? "border-red-500 text-red-500"
                 : "border-gray-700 text-white"
@@ -135,7 +135,7 @@ export default function Skills() {
 
           <button
             onClick={() => setActiveTab("data")}
-            className={`text-left cursor-pointer px-8 py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
+            className={`text-left cursor-pointer text-sm sm:text-base px-4 py-3 sm:px-8 sm:py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
               activeTab === "data"
                 ? "border-red-500 text-red-500"
                 : "border-gray-700 text-white"
@@ -146,7 +146,7 @@ export default function Skills() {
 
           <button
             onClick={() => setActiveTab("devops")}
-            className={`text-left cursor-pointer px-8 py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
+            className={`text-left cursor-pointer text-sm sm:text-base px-4 py-3 sm:px-8 sm:py-4 border rounded-lg transition-all duration-300 hover:border-red-500 hover:text-red-500 ${
               activeTab === "devops"
                 ? "border-red-500 text-red-500"
                 : "border-gray-700 text-white"
@@ -158,7 +158,7 @@ export default function Skills() {
 
         {/* Right Content */}
         <motion.div
-          className="relative flex-1 min-h-[450px] border-2 border-red-500 rounded-xl overflow-hidden"
+          className="relative flex-1 w-full min-h-[280px] sm:min-h-[450px] border-2 border-red-500 rounded-xl overflow-hidden"
           variants={{
             hidden: {
               opacity: 0,
@@ -194,7 +194,7 @@ export default function Skills() {
             transition={{
               duration: 0.35,
             }}
-            className="relative z-10 p-8"
+            className="relative z-10 p-4 sm:p-8"
           >
             {tabs[activeTab as keyof typeof tabs]}
           </motion.div>

@@ -22,13 +22,13 @@ const headingVariants = {
 
 export default function Projects() {
   return (
-    <section className="pt-22 pb-20">
+    <section className="pt-16 pb-12 px-3 sm:px-0 sm:pt-22 sm:pb-20">
       <motion.h1
         variants={headingVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{amount: 0.5 }}
-        className="text-center text-red-500 text-6xl font-bold animate-bounce"
+        className="text-center text-red-500 text-4xl sm:text-6xl font-bold animate-bounce"
       >
         Stuff I Built
       </motion.h1>

@@ -11,7 +11,7 @@ const GitHubCalendar = dynamic(
 export default function About() {
   return (
     <motion.div
-      className="relative overflow-x-hidden min-h-screen pt-24 px-4 sm:px-6 lg:px-8 pb-12"
+      className="relative overflow-x-hidden min-h-screen pt-12 sm:pt-24 px-3 sm:px-6 lg:px-8 pb-10 sm:pb-12"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ amount: 0.3 }}
@@ -31,28 +31,28 @@ export default function About() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="block text-center pt-4 text-red-500 text-5xl sm:text-6xl lg:text-7xl font-bold animate-bounce transition"
+        className="block text-center pt-3 sm:pt-4 text-red-500 text-4xl sm:text-6xl lg:text-7xl font-bold animate-bounce transition"
       >
         About Me.
       </motion.span>
 
       {/* MAIN WRAPPER */}
       <motion.div
-        className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start lg:justify-between max-w-7xl mx-auto w-full"
+        className="flex flex-col lg:flex-row gap-8 lg:gap-10 items-start lg:justify-between max-w-7xl mx-auto w-full min-w-0"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         {/* LEFT SIDE */}
         <motion.div
-          className="w-full lg:w-[48%] lg:ml-0 lg:shrink-0"
+          className="w-full lg:w-[48%] lg:ml-0 lg:shrink-0 min-w-0"
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
           {/* GitHub Card */}
           <motion.div
-            className="mt-16 w-full max-w-[620px] lg:max-w-full h-auto min-h-[300px] bg-black/40 border border-gray-800 rounded-2xl p-4 sm:p-6 transition-transform duration-300 hover:scale-105"
+            className="mt-6 sm:mt-16 w-full max-w-full lg:max-w-full h-auto min-h-[260px] sm:min-h-[300px] bg-black/40 border border-gray-800 rounded-2xl p-4 sm:p-6 transition-transform duration-300 hover:scale-105 mx-auto lg:mx-0"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
@@ -66,7 +66,7 @@ export default function About() {
                 GitHub Activity
               </h2>
 
-              <div className="flex justify-center overflow-x-auto">
+              <div className="flex justify-center overflow-x-auto w-full">
                 <GitHubCalendar username="shubham22062" />
               </div>
             </a>
@@ -74,7 +74,7 @@ export default function About() {
 
           {/* CARDS WRAPPER - Grid on smaller screens, 3-column row on sm+ */}
           <motion.div
-            className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6"
+            className="mt-6 sm:mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-6 w-full max-w-full"
             initial="hidden"
             whileInView="show"
             viewport={{ once: false }}
@@ -159,20 +159,20 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-semibold text-3xl sm:text-4xl mt-8 lg:mt-16">
+          <h1 className="font-semibold text-2xl sm:text-4xl mt-6 sm:mt-8 lg:mt-16">
             Comfortable shipping, not just prototyping.
           </h1>
 
-          <p className="mt-6 sm:mt-8 text-gray-400 max-w-none lg:max-w-xl text-sm sm:text-base">
+          <p className="mt-4 sm:mt-8 text-gray-400 max-w-none lg:max-w-xl text-sm sm:text-base">
             I'm a software engineer who enjoys building products from zero to production. I love transforming ideas into polished, scalable applications that combine clean code, thoughtful user experiences, and modern engineering practices.
           </p>
 
-          <p className="mt-4 text-gray-400 max-w-none lg:max-w-xl text-sm sm:text-base">
+          <p className="mt-3 sm:mt-4 text-gray-400 max-w-none lg:max-w-xl text-sm sm:text-base">
             Over the past few years, I've worked extensively with Next.js, React, Node.js, TypeScript, MongoDB, and Generative AI technologies to develop applications that solve real problems. Whether it's building SaaS platforms, AI-powered tools, or full-stack web applications, I'm driven by curiosity, continuous improvement, and the satisfaction of shipping products that make an impact.
           </p>
 
           <motion.div
-            className="mt-10 sm:mt-16 flex flex-wrap gap-6 sm:gap-10 lg:gap-12 ml-0 sm:ml-10"
+            className="mt-8 sm:mt-16 flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-10 lg:gap-12 ml-0 sm:ml-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}

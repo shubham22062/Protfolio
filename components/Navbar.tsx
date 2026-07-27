@@ -42,7 +42,7 @@ export default function Navbar() {
           : "opacity-0 -translate-y-10 pointer-events-none"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-3 sm:px-6 py-3 sm:py-4">
         {/* Logo */}
         <div
           onClick={() => scrollToSection("landing")}
@@ -51,7 +51,7 @@ export default function Navbar() {
           <img
             src="/hacker.svg"
             alt="logo"
-            className="w-12 h-12 hover:rotate-12 transition-transform duration-300 hover:scale-105  bg-red-500 border-2 border-white rounded-full"
+            className="w-10 h-10 sm:w-12 sm:h-12 hover:rotate-12 transition-transform duration-300 hover:scale-105 bg-red-500 border-2 border-white rounded-full"
           />
         </div>
 
@@ -96,13 +96,13 @@ export default function Navbar() {
             <img
               src="/github.svg"
               alt="github"
-              className="w-10 h-10 bg-white rounded-full p-1 hover:scale-110 transition"
+              className="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-full p-1 hover:scale-110 transition"
             />
           </a>
 
           <button 
           onClick={()=> scrollToSection("contact")}
-          className="px-5 py-2 rounded-lg bg-red-500/20 text-white font-semibold hover:bg-red-600/20 hover:scale-105 transition-all duration-300">
+          className="px-3 py-2 sm:px-5 sm:py-2 rounded-lg bg-red-500/20 text-white text-sm sm:text-base font-semibold hover:bg-red-600/20 hover:scale-105 transition-all duration-300">
             Hire Me
           </button>
         </div>
