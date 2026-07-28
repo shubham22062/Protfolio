@@ -125,14 +125,24 @@ export default function Card() {
           </p>
 
           <div className="mt-auto pt-6 flex flex-wrap gap-3 sm:gap-4">
+            <a href="https://finance-dashboard-system-zs6v-ad7h5xtw3-shubham22062s-projects.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer">
             <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
               View Live
             </button>
+            </a>
 
+
+             <a href="https://github.com/shubham22062/Finance-dashboard-system"
+            target="_blank"
+            rel="noopener noreferrer">
             <button className="bg-white border border-white text-black text-sm rounded-md px-4 py-2 flex items-center gap-2 transition-transform duration-300 hover:scale-105">
+             
               <img src="github.svg" alt="github" className="w-4 h-4" />
               Github
             </button>
+            </a>
           </div>
         </motion.div>
 
@@ -164,14 +174,22 @@ export default function Card() {
           </p>
 
           <div className="mt-auto pt-6 flex flex-wrap gap-3 sm:gap-4">
+             <a href="https://github.com/shubham22062/Awast"
+            target="_blank"
+            rel="noopener noreferrer">
             <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
               View Live
             </button>
+            </a>
 
+            <a href="https://github.com/shubham22062/Awast"
+            target="_blank"
+            rel="noopener noreferrer">
             <button className="bg-white border border-white text-black text-sm rounded-md px-4 py-2 flex items-center gap-2 transition-transform duration-300 hover:scale-105">
               <img src="github.svg" alt="github" className="w-4 h-4" />
               Github
             </button>
+            </a>
           </div>
         </motion.div>
       </motion.div>
