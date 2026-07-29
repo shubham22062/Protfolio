@@ -63,7 +63,7 @@ export default function Skills() {
     >
       {/* Heading */}
       <motion.h1
-        className="text-3xl sm:text-5xl font-bold text-red-500 text-center animate-bounce"
+        className="text-5xl sm:text-5xl font-bold text-red-500 text-center animate-bounce"
         variants={{
           hidden: {
             opacity: 0,
