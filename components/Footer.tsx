@@ -25,7 +25,7 @@ export default function Footer(){
             </a>
 
             <a href="https://www.linkedin.com/in/shubham-awasthi-310520291/">
-              <img src="Linkedin.svg" className="w-10 h-10 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkkHI_JJfZV-v8iqTSZ8p1UpOk4sMvSxOY3_2dwgiWWw&s=10" className="w-10 h-10 bg-white border rounded-full transition-transform duration-300 hover:scale-105"/>
             </a>
 
             <a href="https://x.com/Awa24777Shubham">
