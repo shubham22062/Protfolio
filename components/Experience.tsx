@@ -91,7 +91,7 @@ export default function Experience() {
   return (
     <section
       ref={ref}
-      className="relative pt-12 sm:pt-24 min-h-fit sm:min-h-[160vh] px-3 sm:px-0 pb-12 sm:pb-0"
+      className="relative pt-20 sm:pt-24 min-h-fit sm:min-h-[160vh] px-3 sm:px-0 pb-12 sm:pb-0"
     >
 
       {/* Heading */}

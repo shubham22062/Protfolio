@@ -179,7 +179,7 @@ export default function Hero() {
             delay: 0.7,
             ease: "easeOut",
           }}
-          className="relative z-10 flex flex-col lg:flex-row items-center gap-4 lg:gap-6 mt-8 mb-10 lg:mt-[50px] lg:mb-0 lg:pl-10"
+          className="relative z-10 flex flex-col lg:flex-row items-center gap-2 lg:gap-2 mt-8 mb-10 lg:mt-[50px] lg:mb-0 lg:pl-10"
         >
           <button
             onClick={toggleVideo}
