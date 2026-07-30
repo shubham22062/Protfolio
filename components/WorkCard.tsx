@@ -8,27 +8,35 @@ const PROJECTS = [
     title: "Meshspire",
     description: "MeshSpire is a production-ready, real-time tutoring platform that connects students and tutors through live video sessions, instant messaging, and secure online payments. Built with a scalable monorepo architecture, it leverages Next.js, React, Node.js, PostgreSQL, Prisma, WebRTC, and AWS.",
     image: "/Meshspire.svg",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://meshspire-landing.vercel.app/",
+    githubLink: "https://github.com/shubham22062/MeshSpire_Core",
   },
   {
     title: "Finance Dashboard",
     description: "Financial Dashboard System is a production-ready, full-stack personal finance platform that enables users to track income, expenses, and spending trends through interactive charts and real-time analytics. Built with React.js, Node.js, Express, MongoDB, and Chart.js.",
     image: "/Finance.svg",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://finance-dashboard-system-9w37.vercel.app/",
+    githubLink: "https://github.com/shubham22062/Finance-dashboard-system",
   },
   {
     title: "Awast AI",
     description: "Awast AI is a lightweight conversational AI assistant that delivers intelligent, real-time responses through a clean and intuitive chat interface. Built using modern web technologies and LLM integration, it enables users to ask questions and receive contextual assistance.",
     image: "/AwastAi.svg",
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://awast.vercel.app/",
+    githubLink: "https://github.com/shubham22062/Awast",
+  },
+
+   {
+    title: "Okar",
+    description: "Okar is a sleek interior design website that delivers an immersive browsing experience through elegant layouts and responsive design. Built using modern web technologies, it allows users to discover design inspiration, explore completed projects, and easily inquire about customized interior services.",
+    image: "/okar.png",
+    liveLink: "https://okaro-ten.vercel.app/",
+    githubLink: "https://github.com/shubham22062/okaro",
   },
 ];
 
 // Duplicate the array once to keep your 6-card layout dynamic
-const ALL_PROJECTS = [...PROJECTS, ...PROJECTS];
+const ALL_PROJECTS = [...PROJECTS];
 
 const containerVariants: Variants = {
   hidden: {},

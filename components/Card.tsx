@@ -174,7 +174,7 @@ export default function Card() {
           </p>
 
           <div className="mt-auto pt-6 flex flex-wrap gap-3 sm:gap-4">
-             <a href="https://github.com/shubham22062/Awast"
+             <a href="https://awast.vercel.app/"
             target="_blank"
             rel="noopener noreferrer">
             <button className="bg-red-500 border border-red-500 text-black text-sm rounded-md px-4 py-2 transition-transform duration-300 hover:scale-105">
