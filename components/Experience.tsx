@@ -91,7 +91,7 @@ export default function Experience() {
   return (
     <section
       ref={ref}
-      className="relative pt-20 sm:pt-24 min-h-fit sm:min-h-[160vh] px-3 sm:px-0 pb-12 sm:pb-0"
+      className="relative pt-20 md:pt-24 min-h-fit md:min-h-[120vh] px-3 md:px-0 pb-12 md:pb-0"
     >
 
       {/* Heading */}
@@ -100,13 +100,13 @@ export default function Experience() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.3 }}
-        className="text-2xl sm:text-6xl font-bold text-red-500 text-center animate-bounce"
+        className="text-2xl md:text-6xl font-bold text-red-500 text-center animate-bounce"
       >
         Where I've Worked
       </motion.h1>
 
       {/* Timeline */}
-      <div className="absolute left-1/2 top-44 -translate-x-1/2 hidden sm:block">
+      <div className="absolute left-1/2 top-44 -translate-x-1/2 hidden md:block">
 
         <motion.div
           variants={lineVariants}
@@ -124,17 +124,17 @@ export default function Experience() {
 
       </div>
 
-      <div className="relative mt-6 sm:mt-24 space-y-8 sm:space-y-40">
+      <div className="relative mt-6 md:mt-24 space-y-8 md:space-y-40">
 
         {/* LEFT CARD */}
-        <div className="flex justify-center sm:justify-start">
+        <div className="flex justify-center md:justify-start">
 
           <motion.div
             variants={leftCardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
-            className="relative w-full max-w-[600px] sm:w-[600px] sm:ml-20"
+            className="relative w-full max-w-[600px] md:w-[clamp(320px,43.478vw,600px)] md:ml-[clamp(16px,5.797vw,80px)]"
           >
 
             <motion.img
@@ -193,14 +193,14 @@ export default function Experience() {
         </div>
 
         {/* RIGHT CARD */}
-        <div className="w-full flex justify-center sm:absolute sm:right-0 sm:top-44 sm:justify-end">
+        <div className="w-full flex justify-center md:absolute md:right-0 md:top-44 md:justify-end">
 
           <motion.div
             variants={rightCardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false, amount: 0.2 }}
-            className="relative w-full max-w-[600px] sm:w-[600px] sm:mr-20"
+            className="relative w-full max-w-[600px] md:w-[clamp(320px,43.478vw,600px)] md:mr-[clamp(16px,5.797vw,80px)]"
           >
 
             <motion.img

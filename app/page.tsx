@@ -18,31 +18,31 @@ export default function Home() {
   id="scroll-container"
   className="h-screen overflow-x-hidden overflow-y-scroll snap-y snap-mandatory scroll-smooth"
 >
-  <section className="min-h-screen sm:h-screen snap-start">
+  <section className="min-h-[100dvh] snap-start">
     <Landing />
   </section>
 
-  <section id="home" className="min-h-screen sm:h-screen snap-start">
+  <section id="home" className="min-h-[100dvh] snap-start">
     <Hero />
   </section>
 
-  <section id="about" className="min-h-screen sm:h-screen snap-start">
+  <section id="about" className="min-h-[100dvh] snap-start">
     <About />
   </section>
 
-  <section id="experience" className="min-h-screen sm:h-screen snap-start">
+  <section id="experience" className="min-h-[100dvh] snap-start">
     <Experience />
   </section>
 
-  <section id="projects" className="min-h-screen sm:h-screen snap-start">
+  <section id="projects" className="min-h-[100dvh] snap-start">
     <Projects />
   </section>
 
-  <section id="skills" className="min-h-screen sm:h-screen snap-start">
+  <section id="skills" className="min-h-[100dvh] snap-start">
     <Skills />
   </section>
 
-  <section id="contact" className="min-h-screen sm:h-screen snap-start">
+  <section id="contact" className="min-h-[100dvh] snap-start">
     <ContactMe />
   </section>
 

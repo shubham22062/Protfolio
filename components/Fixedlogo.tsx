@@ -33,13 +33,22 @@ function LogoModel({ scale }: { scale: number }) {
 
 useGLTF.preload("logo.glb")
 
+function getScaleForWidth(width: number) {
+    if (width < 400) return 0.85;
+    if (width < 640) return 1.0;
+    if (width < 768) return 1.15;
+    if (width < 1024) return 1.25;
+    if (width < 1280) return 1.35;
+    if (width < 1536) return 1.5;
+    return 1.65;
+}
 
 export default function Fixedlogo() {
     const [scale, setScale] = useState(1.5);
 
     useEffect(() => {
         const updateScale = () => {
-            setScale(window.innerWidth < 640 ? 1.1 : 1.5);
+            setScale(getScaleForWidth(window.innerWidth));
         };
 
         updateScale();
@@ -49,7 +58,7 @@ export default function Fixedlogo() {
     }, []);
 
     return (
-        <div className="pt-10 w-full h-[160px] sm:h-[200px]">
+        <div className="pt-10 w-full h-[130px] xs:h-[150px] sm:h-[180px] md:h-[200px] lg:h-[200px] xl:h-[200px] 2xl:h-[200px]">
 
             <Canvas camera={{ position: [0, 0, 5] }}>
 
