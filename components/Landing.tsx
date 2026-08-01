@@ -2,15 +2,32 @@
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Logo() {
   const { scene } = useGLTF("/logo.glb");
+  const [scale, setScale] = useState(3.5);
+
+  useEffect(() => {
+    const computeScale = () => {
+      const w = window.innerWidth;
+      if (w < 640) return 2.2;       // mobile
+      if (w < 768) return 2.6;       // large mobile
+      if (w < 1024) return 3.0;      // tablet
+      return 3.5;                    // desktop (original value)
+    };
+
+    setScale(computeScale());
+
+    const handleResize = () => setScale(computeScale());
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <primitive
       object={scene}
-      scale={3.5}
+      scale={scale}
       rotation={[0, 0, 0]}
     />
   );
@@ -41,7 +58,9 @@ export default function Landing() {
     });
   };
 
-  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+  // Pointer events unify mouse click + touch tap, so this works the same
+  // on desktop, tablet, and mobile without duplicating handlers.
+  const handleClick = (e: React.PointerEvent<HTMLDivElement>) => {
     const x = e.clientX;
     const y = e.clientY;
 
@@ -67,8 +86,8 @@ export default function Landing() {
 
   return (
     <div
-      onClick={handleClick}
-      className="relative h-screen w-full overflow-hidden"
+      onPointerDown={handleClick}
+      className="relative h-screen w-full overflow-hidden touch-pan-y"
     >
       {/* Background */}
       <img
@@ -129,9 +148,14 @@ export default function Landing() {
             sm:h-[340px]
             md:h-[420px]
             lg:h-[500px]
+            touch-none
           "
         >
-          <Canvas camera={{ position: [0, 0, 60], fov: 45 }}>
+          <Canvas
+            camera={{ position: [0, 0, 60], fov: 45 }}
+            dpr={[1, 2]}
+            gl={{ antialias: true }}
+          >
             <ambientLight intensity={3} />
             <directionalLight position={[5, 5, 5]} intensity={5} />
             <pointLight position={[-5, 5, 5]} intensity={3} />
@@ -142,6 +166,8 @@ export default function Landing() {
             <OrbitControls
               enableZoom={false}
               enablePan={false}
+              enableDamping
+              dampingFactor={0.1}
             />
           </Canvas>
         </div>

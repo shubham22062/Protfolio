@@ -158,7 +158,7 @@ export default function Card() {
           <img
             src="AwastAi.svg"
             alt="AwastAi"
-            className="w-full h-[180px] sm:h-[200px] object-cover rounded-lg hover:cursor-zoom-in"
+            className="w-full h-[180px] sm:h-[200px] object-cover rounded-lg"
           />
 
           <span className="font-bold text-red-500 text-lg sm:text-xl block pt-4 sm:pt-5">
