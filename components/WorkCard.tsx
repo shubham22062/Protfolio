@@ -33,6 +33,14 @@ const PROJECTS = [
     liveLink: "https://okaro-ten.vercel.app/",
     githubLink: "https://github.com/shubham22062/okaro",
   },
+
+  {
+    title: "Param_interior",
+    description: "Param Interior is a premium interior design studio that creates elegant and functional spaces through thoughtful design and craftsmanship. Built with a focus on modern aesthetics, it showcases inspiring projects, unique concepts, and personalized interior solutions for residential and commercial spaces.",
+    image: "/Param.png",
+    liveLink: "https://param-interiors.vercel.app/",
+    githubLink: "https://github.com/shubham22062/Param_interiors",
+  },
 ];
 
 // Duplicate the array once to keep your 6-card layout dynamic
