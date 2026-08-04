@@ -159,7 +159,7 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-semibold text-2xl sm:text-4xl mt-6 sm:mt-8 lg:mt-16">
+          <h1 className="font-semibold text-2xl sm:text-4xl mt-6 sm:mt-8 lg:mt-16 text-white">
             Comfortable shipping, not just prototyping.
           </h1>
 
