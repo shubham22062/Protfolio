@@ -22,7 +22,7 @@ export default function About() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="font-bold text-2xl text-center hover:text-red-500 transition"
+        className="font-bold text-2xl text-center hover:text-red-500 transition text-white"
       >
         Who Am I
       </motion.h1>
@@ -52,7 +52,7 @@ export default function About() {
         >
           {/* GitHub Card */}
           <motion.div
-            className="mt-6 sm:mt-16 w-full max-w-full lg:max-w-full h-auto min-h-[260px] sm:min-h-[300px] bg-black/40 border border-gray-800 rounded-2xl p-4 sm:p-6 transition-transform duration-300 hover:scale-105 mx-auto lg:mx-0"
+            className="mt-6 sm:mt-16 w-full max-w-full lg:max-w-full h-auto min-h-[260px] sm:min-h-[300px] bg-black/40 border border-gray-800 rounded-2xl p-4 sm:p-6 transition-transform duration-300 hover:scale-105 mx-auto lg:mx-0 text-white"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
