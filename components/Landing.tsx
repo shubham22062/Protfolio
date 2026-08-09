@@ -121,7 +121,7 @@ export default function Landing() {
             md:w-[320px] md:h-[180px]
             lg:w-[380px] lg:h-[220px]
             rounded-full
-            bg-red-500/20
+            bg-white
             blur-3xl
           "
         />
