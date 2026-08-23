@@ -45,6 +45,16 @@ const PROJECTS = [
     githubLink:
       "https://github.com/shubham22062/Param_interiors",
   },
+
+  {
+    title: "HydroX",
+    description:"HydroX is a smart water tracking application that helps users monitor their daily hydration and maintain healthy drinking habits through personalized goals. Built with a focus on simplicity and usability, it enables users to track water intake, view progress, manage daily targets, and provides admins with tools to manage users and hydration data.",
+
+    image: "/HydroX.png",
+    liveLink: "https://water-tracker-frontend-mu.vercel.app/",
+    githubLink:
+      "https://github.com/shubham22062/Water_Tracker-frontend-",
+  },
 ];
 
 const containerVariants: Variants = {
