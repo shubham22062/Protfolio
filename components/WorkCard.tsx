@@ -55,6 +55,15 @@ const PROJECTS = [
     githubLink:
       "https://github.com/shubham22062/Water_Tracker-frontend-",
   },
+
+  {
+    title: "DropVault",
+    description:"DropVault is a smart file upload manager that helps users securely upload and organize multiple files with ease. Built with a focus on simplicity and usability, it enables users to track upload progress, manage files, retry failed uploads, and provides efficient tools for handling file transfers and storage.",
+    image: "/upload.png",
+    liveLink: "https://drop-vault-kappa.vercel.app/",
+    githubLink:
+      "https://github.com/shubham22062/dropVault",
+  },
 ];
 
 const containerVariants: Variants = {
